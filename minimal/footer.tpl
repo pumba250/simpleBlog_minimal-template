@@ -90,7 +90,7 @@
     
     <footer>
         <div class="container">
-            <p>&copy; <?= date("Y") ?> <?= htmlspecialchars($_SERVER['SERVER_NAME']) ?>. Все права защищены.</p>
+            <p>&copy; <?= date("Y") ?> <?= htmlspecialchars($_SERVER['SERVER_NAME']) ?>. Powered by <?= $powered ?>_<?= $version ?>. Все права защищены.</p>
         </div>
     </footer>
     
