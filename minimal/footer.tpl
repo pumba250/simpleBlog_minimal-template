@@ -13,11 +13,11 @@
 								</div>
 							<?php endif; ?>
                             <h3>Привет, <?= htmlspecialchars($user['username']) ?>!</h3>
-                            <form method="post" action="/admin/do_logout.php">
+                            <form method="post" action="/admin.php?logout">
                                 <button type="submit" class="btn btn-outline">Выйти</button>
                             </form>
                             <?php if ($user['isadmin']=='9'): ?>
-                                <p><a href="/admin/" class="admin-link">Панель администратора</a></p>
+                                <p><a href="/admin.php" class="admin-link">Панель администратора</a></p>
                             <?php endif; ?>
                         </div>
                     <?php else: ?>
