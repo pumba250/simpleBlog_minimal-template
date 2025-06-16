@@ -16,7 +16,7 @@
                             <form method="post" action="/admin.php?logout">
                                 <button type="submit" class="btn btn-outline">Выйти</button>
                             </form>
-                            <?php if ($user['isadmin']=='9'): ?>
+                            <?php if ($user['isadmin']>='7'): ?>
                                 <p><a href="/admin.php" class="admin-link">Панель администратора</a></p>
                             <?php endif; ?>
                         </div>
